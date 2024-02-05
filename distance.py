@@ -2,7 +2,7 @@ import cv2 as cv
 from cv2 import aruco
 import numpy as np
 
-calib_data_path = r"C:\Users\vyshn\Downloads\MultiMatrix.npz"
+calib_data_path = r"C:\Users\vyshn\MultiMatrix.npz"
 
 calib_data = np.load(calib_data_path)
 print(calib_data.files)
@@ -14,11 +14,11 @@ t_vectors = calib_data["tVector"]
 
 MARKER_SIZE = 8  
 
-marker_dict = aruco.Dictionary_get(aruco.DICT_4X4_50)
+marker_dict = aruco.Dictionary_get(aruco.DICT_4X4_50) #change dict to whateva
 
 param_markers = aruco.DetectorParameters_create()
 
-cap = cv.VideoCapture(0) #give the server id shown in IP webcam App
+cap = cv.VideoCapture(0) 
 
 while True:
     ret, frame = cap.read()
