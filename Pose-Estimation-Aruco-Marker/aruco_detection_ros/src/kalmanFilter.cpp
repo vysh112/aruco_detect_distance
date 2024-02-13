@@ -1,4 +1,3 @@
-//Aditya Arun Iyer   Contact - 8073711953  Mail - adityaaruniyer01@gmail.com
 
 #include <opencv2/aruco.hpp>
 #include <opencv2/imgproc.hpp>
